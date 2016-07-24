@@ -476,7 +476,7 @@
 
 
         <div class="row">
-            <div class="left-navigation col-xs-0 col-md-3 hidden-xs hidden-sm">
+            <div class="col-xs-0 col-md-3 hidden-xs hidden-sm">
                 <!-- menus and filters-->
                 <div class="panel panel-default sidebar-menu">
                     <div class="panel-heading">
@@ -1487,21 +1487,8 @@
                 else
                 { 
 
-
-                if($('.left-navigation').is(':visible'))
-                {
                     back_id = (current.replace(" ",""))+'li';
                    $('li[id='+back_id+']').children('a').click();
-                }
-                else
-                {
-
-                 menu_clicked = back;
-                 
-                image_loader(menu_clicked,0);
-           
-                pagination(); 
-                }
 
                 }
 
